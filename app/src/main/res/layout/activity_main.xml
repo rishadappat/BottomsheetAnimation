@@ -11,9 +11,7 @@
     <RelativeLayout
         android:id="@+id/childLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_anchor="@+id/bottomSheet"
-        app:layout_anchorGravity="bottom|end">
+        android:layout_height="match_parent">
         <com.google.android.material.card.MaterialCardView
             android:layout_width="300dp"
             android:layout_height="300dp"

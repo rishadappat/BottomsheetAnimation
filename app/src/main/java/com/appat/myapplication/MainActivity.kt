@@ -23,7 +23,8 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onSlide(bottomSheet: View, slideOffset: Float) {
-                ObjectAnimator.ofFloat(childLayout, "translationY", slideOffset * -1 * bottomSheet.height/2).apply {
+                val targetHeight = -1 * bottomSheet.height/2   // This height can be change as per the requirements
+                ObjectAnimator.ofFloat(childLayout, "translationY", slideOffset * targetHeight).apply {
                     duration = 0
                     start()
                 }
